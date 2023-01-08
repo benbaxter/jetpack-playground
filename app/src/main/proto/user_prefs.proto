@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "com.benjamingbaxter.swgoh.farmer.datastore";
+option java_multiple_files = true;
+
+message UserPreferences {
+  // SWGOH player id. Typically of the form XXX-XXX-XXX
+  string player_id = 1;
+
+  // filter for showing / hiding completed tasks
+  bool show_completed = 2;
+
+  // defines tasks sorting order: no order, by deadline, by priority, by deadline and priority
+  enum SortOrder {
+    UNSPECIFIED = 0;
+    NONE = 1;
+    BY_DEADLINE = 2;
+    BY_PRIORITY = 3;
+    BY_DEADLINE_AND_PRIORITY = 4;
+  }
+
+  // user selected tasks sorting order
+  SortOrder sort_order = 3;
+}

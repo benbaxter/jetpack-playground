@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Star Wars GOH Farmer</string>
+
+  <string name="user_prefs_title">User Preferences</string>
+  <string name="user_prefs_player_id">Player ID</string>
+  <string name="user_prefs_content_description_save_completed">Save completed</string>
+</resources>
